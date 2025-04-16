@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BrightFuture College</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>BrightFuture College</h1>
+        <p>Empowering Students for a Brighter Tomorrow</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#placements">Placements</a>
+        <a href="#admission">Admission Enquiry</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        Welcome to BrightFuture
+    </section>
+    
+    <section class="departments" id="departments">
+        <h2>Departments</h2>
+        <div class="departments-container">
+            <a href="computer-science.html" class="department-card">
+                <div class="department-info">
+                    <h3>Computer Science</h3>
+                    <p>Number of Students: 300</p>
+                    <p>HOD: Dr. Arjun Mehta (PhD in AI)</p>
+                </div>
+            </a>
+            <a href="business-admin.html" class="department-card">
+                <div class="department-info">
+                    <h3>Business Administration</h3>
+                    <p>Number of Students: 200</p>
+                    <p>HOD: Dr. Rina Kapoor (PhD in Management)</p>
+                </div>
+            </a>
+            <a href="electrical-engineering.html" class="department-card">
+                <div class="department-info">
+                    <h3>Electrical Engineering</h3>
+                    <p>Number of Students: 250</p>
+                    <p>HOD: Prof. Sushma Iyer (M.Tech)</p>
+                </div>
+            </a>
+            <a href="mechanical-engineering.html" class="department-card">
+                <div class="department-info">
+                    <h3>Mechanical Engineering</h3>
+                    <p>Number of Students: 220</p>
+                    <p>HOD: Dr. Karthik Rao (PhD in Thermodynamics)</p>
+                </div>
+            </a>
+            <a href="civil-engineering.html" class="department-card">
+                <div class="department-info">
+                    <h3>Civil Engineering</h3>
+                    <p>Number of Students: 180</p>
+                    <p>HOD: Prof. Meena Joshi (M.Tech)</p>
+                </div>
+            </a>
+            <a href="psychology.html" class="department-card">
+                <div class="department-info">
+                    <h3>Psychology</h3>
+                    <p>Number of Students: 140</p>
+                    <p>HOD: Dr. Samira Khan (PhD in Cognitive Science)</p>
+                </div>
+            </a>
+            <a href="design.html" class="department-card">
+                <div class="department-info">
+                    <h3>Design</h3>
+                    <p>Number of Students: 120</p>
+                    <p>HOD: Prof. Raghav Sen (M.Des)</p>
+                </div>
+            </a>
+            <a href="biotechnology.html" class="department-card">
+                <div class="department-info">
+                    <h3>Biotechnology</h3>
+                    <p>Number of Students: 160</p>
+                    <p>HOD: Dr. Neha Bansal (PhD in Molecular Biology)</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="placements">
+        <h2>Placement Statistics</h2>
+        <div class="placement-section">
+            <div class="placement-text">
+                <p>Our college has a strong track record of student placements across top companies in the tech, finance, engineering, and design sectors. Each year, more than 85% of our eligible students secure positions with competitive salaries.</p>
+                <p>We work closely with industry leaders and our training programs ensure students are well-prepared for the corporate world.</p>
+            </div>
+            <img src="https://mgit.ac.in/wp-content/uploads/2023/05/placement-chart-30-5-2023.png" alt="Placement Bar Chart">
+        </div>
+    </section>
+    <section id="admission">
+        <h2>Admission Enquiry</h2>
+        <form onsubmit="showSuccessMessage(event)" style="max-width: 600px; margin: 40px auto 0; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div style="margin-bottom: 20px;">
+                <label for="name" style="display:block; font-weight: 500; margin-bottom: 8px;">Full Name</label>
+                <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="email" style="display:block; font-weight: 500; margin-bottom: 8px;">Email Address</label>
+                <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="phone" style="display:block; font-weight: 500; margin-bottom: 8px;">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 20px;">
+                <label for="department" style="display:block; font-weight: 500; margin-bottom: 8px;">Interested Department</label>
+                <select id="department" name="department" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                    <option value="">Select a Department</option>
+                    <option>Computer Science</option>
+                    <option>Business Administration</option>
+                    <option>Electrical Engineering</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Civil Engineering</option>
+                    <option>Psychology</option>
+                    <option>Design</option>
+                    <option>Biotechnology</option>
+                </select>
+            </div>
+            <button type="submit" style="background-color: #0055a5; color: white; padding: 12px 25px; border: none; border-radius: 5px; font-weight: 600; cursor: pointer;">
+                Submit Enquiry
+            </button>
+            <p id="successMessage" class="success-message">
+                ✅ Your enquiry has been submitted successfully. We’ll get in touch with you soon!
+            </p>
+        </form>
+    </section>
+
+    <script>
+        function showSuccessMessage(event) {
+            event.preventDefault();
+            document.getElementById("successMessage").style.display = "block";
+            setTimeout(() => {
+                event.target.reset();
+            }, 500);
+        }
+    </script>
+
+    <section class="faq" id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <h3>What is the admission process?</h3>
+        <p>Admissions are based on entrance exams followed by a counseling session. Visit our admissions page for more details.</p>
+        <h3>Are there hostel facilities?</h3>
+        <p>Yes, we provide well-equipped hostel facilities for both boys and girls with 24/7 security and Wi-Fi access.</p>
+        <h3>What companies visit for placements?</h3>
+        <p>Companies like Infosys, TCS, Deloitte, L&T, and Adobe regularly recruit from our campus.</p>
+        <h3>Does the college provide scholarships?</h3>
+        <p>Yes, we offer merit-based and need-based scholarships. Details can be found on our scholarships page.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@brightfuturecollege.edu</p>
+        <p>Phone: +1 (123) 456-7890</p>
+        <p>Address: 123 Knowledge Ave, Learning City, ED 45678</p>
+    </section>
+  
+</body>
+</html>
