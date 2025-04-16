@@ -1,0 +1,134 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+}
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+nav {
+    background-color: #0055a5;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+nav a:hover {
+    color: #ffcc00;
+}
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://th.bing.com/th/id/OIP.IDBgFBU5t4OiPGqqhtBz1AHaE7?w=1600&h=1066&rs=1&pid=ImgDetMain') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+section {
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+h2 {
+    color: #003366;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.departments-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.department-card {
+    flex: 0 0 calc(33.333% - 30px);
+    box-sizing: border-box;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+.department-card:hover {
+    transform: translateY(-5px);
+}
+.department-info {
+    padding: 25px;
+}
+.department-info h3 {
+    margin: 0 0 15px;
+    font-size: 1.5em;
+    color: #0055a5;
+}
+.department-info p {
+    margin: 8px 0;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .department-card {
+        flex: 0 0 calc(50% - 30px);
+    }
+}
+@media (max-width: 600px) {
+    .department-card {
+        flex: 0 0 100%;
+    }
+}
+
+.placement-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.placement-section img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.placement-text {
+    flex: 1;
+}
+
+.faq {
+    max-width: 800px;
+    margin: auto;
+}
+.faq h3 {
+    color: #0055a5;
+    margin-bottom: 10px;
+}
+.faq p {
+    margin-bottom: 30px;
+}
+
+.success-message {
+    display: none;
+    margin-top: 20px;
+    color: green;
+    font-weight: 500;
+}
